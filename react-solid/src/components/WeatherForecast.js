@@ -29,9 +29,9 @@ export class WeatherForecast extends Component {
   }
 
   async populateWeatherData() {
-    var temperatureC = this.props.temperature;
+    var days = this.props.days;
     var url = this.props.url;
-    const response = await fetch(`${url}/weatherforecast?temperatureC=${temperatureC}`);
+    const response = await fetch(`${url}/weatherforecast?days=${days}`);
     const data = await response.json();
     this.setState({ forecasts: data, loading: false });
   }

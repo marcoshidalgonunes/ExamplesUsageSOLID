@@ -9,11 +9,11 @@ const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
 const rootElement = document.getElementById('root');
 const url = document.getElementById("url").value;
 const urlParams = new URLSearchParams(window.location.search); 
-const temperature = urlParams.has('temp') ? urlParams.get('temp') : '20';
+const days = urlParams.has('days') ? urlParams.get('days') : '7';
 const unit = urlParams.has('unit') ? urlParams.get('unit') : 'C';
 
 ReactDOM.render(
   <BrowserRouter basename={baseUrl}>
-    <App url={url} temperature={temperature} unit={unit}/>
+    <App url={url} days={days} unit={unit}/>
   </BrowserRouter>,
   rootElement);

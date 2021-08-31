@@ -36,8 +36,8 @@ export class ForecastC extends Forecast {
             <tbody>
               {this.getForecasts().map(forecast =>
                 <tr key={forecast.date}>
-                  <td>{forecast.date}</td>
-                  <td>{forecast.temperatureC}</td>
+                  <td>{new Date(forecast.date).toDateString()}</td>
+                  <td>{forecast.temperature}</td>
                   <td>{forecast.summary}</td>
                 </tr>
               )}
@@ -55,8 +55,8 @@ export class ForecastF extends Forecast {
             <tbody> 
               {this.getForecasts().map(forecast =>
                 <tr key={forecast.date}>
-                  <td>{forecast.date}</td>
-                  <td>{forecast.temperatureF}</td>
+                  <td>{new Date(forecast.date).toDateString()}</td>
+                  <td>{Math.round((forecast.temperature/0.5556)+32)}</td>
                   <td>{forecast.summary}</td>
                 </tr>
               )}
