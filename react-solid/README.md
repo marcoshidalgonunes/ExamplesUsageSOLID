@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+# React App Using SOLID Principles
+
+The following principles were applied in this application.
+
+**Single Responsability Principle**
+
+There are components to get data, render them in a table and apply layout to the table.
+
+**Open-Closed Principle**
+
+The components that render data show them as desiered by user extend a base component and applies specific behaviours.
+
+**Liskov Substitution Principle**
+
+Use of components that render data is through a published method. The interrnals of their work are abstracted from the caller.
+
+**Interface Segregation Principle**
+
+Each component of app exposes the specific methods to peform their requirements.
+
+**Dependency Inversion Principle**
+
+The App is assembled by components, abstracting their interrnals.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
