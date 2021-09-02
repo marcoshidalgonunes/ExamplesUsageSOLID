@@ -16,7 +16,7 @@ Only implementation of interface is public in the service classes.
 
 **Interface Segregation Principle**
 
-There is an interface for services, which supports the [Dependency Injection]() of service classes.
+There is an interface for services, which supports the [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0) of service classes.
 
 **Dependency Inversion Principle**
 
