@@ -1,5 +1,5 @@
 # ExamplesUsageSOLID
-Examples about how to use the following SOLID principles in front-end and back-end applications.
+Examples about how to use the following [SOLID](https://en.wikipedia.org/wiki/SOLID) principles in front-end and back-end applications.
 
 **Single Responsability Princple**
 
