@@ -20,7 +20,7 @@ Each component of app exposes the specific methods to peform their requirements.
 
 **Dependency Inversion Principle**
 
-The App is assembled by components, abstracting their interrnals.
+> The App is assembled by components, abstracting their interrnals.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
